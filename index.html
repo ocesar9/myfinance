@@ -45,8 +45,8 @@
 
             <div class="card total">
                 <h3>
-                    <span>Total</span>
-                    <img src="./assets//total.svg" alt="">
+                    <span>Saldo</span>
+                    <img src="./assets//saldo.svg" alt="">
                 </h3>
                 <p id="totalDisplay">R$ 0,00</p>
             </div>
@@ -57,9 +57,16 @@
 
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
-            <a href="#" onclick="Modal.open()" class="button new">
-                + Nova Transação
-            </a>
+            <div class="history">
+                <a href="#" onclick="Modal.open()" class="button new">
+                    + Nova Transação
+                </a>
+                <a href="#" onclick="Storage.clean()" class="button clean">
+                    Limpar Transações
+                </a>
+
+            </div>
+           
             <table id="data-table">
                 <thead>
                     <tr>

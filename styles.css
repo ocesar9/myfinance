@@ -4,7 +4,8 @@
     --dark-blue: #363f5f;
     --green: #49aa26;
     --light-green:#3dd705;
-    --red: #e92929
+    --red: #ff726f;
+    --light-red: #f70d1a;
 }
 
 * {
@@ -53,13 +54,21 @@ h2 {
 
 /* Links and Buttons */
 
-a {
+.button.new {
     color: var(--green);
     text-decoration: none;
 }
 
-a:hover {
+.button.new:hover {
     color: var(--light-green);
+}
+.button.clean {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.button.clean:hover {
+    color: var(--light-red);
 }
 
 button {
@@ -163,6 +172,16 @@ header {
     color: #fff;
 }
 
+.card.total.positive {
+    background: var(--light-green);
+    color: #fff;
+}
+
+.card.total.negative {
+    background: var(--light-red);
+    color: #fff;
+}
+
 /* Table */
 
 #transaction {
@@ -171,6 +190,12 @@ header {
 
     overflow-x: auto;
 }
+
+.history {
+    display: flex;
+    justify-content:space-between;
+}
+
 
 #data-table {
     width: 100%;

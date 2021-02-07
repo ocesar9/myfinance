@@ -13,7 +13,8 @@ const Modal = {
         document
             .querySelector(".modal-overlay")
             .classList.remove("active")
-    }
+    },
+   
 
 }
 
@@ -26,6 +27,18 @@ const Storage = {
         localStorage.setItem("my.finance:transactions",JSON.stringify(transactions))
         
     },
+    clean(index){
+        DOM.clearTransactions()
+        localStorage.removeItem("my.finance:transactions")
+        Transaction.all.splice(index)
+        App.reload()
+        
+        
+        
+        
+ 
+    }
+   
 
 }
 
@@ -83,7 +96,32 @@ const Transaction = {
     total() {
         //entradas - saídas
         // return "Total"
-        return Transaction.incomes() + Transaction.expenses();
+
+
+        Total = Transaction.incomes() + Transaction.expenses()
+
+
+
+        if(Total < 0){
+            document
+            .querySelector(".card.total")
+            .classList
+            .add("negative")
+
+            
+
+        }else {
+            document
+            .querySelector(".card.total")
+            .classList
+            .add("positive")
+
+        }
+
+        return Total;
+
+        
+
     }
 }
 
@@ -212,6 +250,7 @@ const Form = {
     saveTransaction(transaction){
           // salvar
         Transaction.add(transaction)
+      
     },
 
     clearFields(){
@@ -261,6 +300,9 @@ const App = {
         DOM.clearTransactions()
         App.init()
     },
+
+   
+
 }
 
 
