@@ -95,6 +95,7 @@ const Transaction = {
     },
     total() {
         //entradas - saídas
+        // Definindo positivo ou negativo
         // return "Total"
 
 
@@ -108,6 +109,11 @@ const Transaction = {
             .classList
             .add("negative")
 
+            document
+            .querySelector(".card.total")
+            .classList
+            .add("positive")
+
             
 
         }else {
@@ -115,6 +121,12 @@ const Transaction = {
             .querySelector(".card.total")
             .classList
             .add("positive")
+
+            document
+            .querySelector(".card.total")
+            .classList
+            .remove("negative")
+            
 
         }
 
@@ -308,5 +320,3 @@ const App = {
 
 
 App.init()
-
-
