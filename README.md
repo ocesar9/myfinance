@@ -20,7 +20,6 @@ O Projeto consiste num sistema de registro e controle de finanças. Utilizamos J
 - HTML
 - CSS
 - Javascript
-- Expo
 ## Implantação em produção
 - Front end web: Netlify
 
