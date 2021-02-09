@@ -112,11 +112,22 @@ const Transaction = {
             document
             .querySelector(".card.total")
             .classList
-            .add("positive")
+            .remove("positive")
 
             
 
-        }else {
+        }else if(Total === 0){
+            document
+            .querySelector(".card.total")
+            .classList
+            .remove("negative")
+            document
+            .querySelector(".card.total")
+            .classList
+            .remove("positive")
+        }
+        
+        else {
             document
             .querySelector(".card.total")
             .classList
