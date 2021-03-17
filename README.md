@@ -1,4 +1,4 @@
-# myfinance 
+# myfinance :money_with_wings:	
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/c3saroliveira/maratona-discover/blob/main/LICENSE) 
 
