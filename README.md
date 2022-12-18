@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-https://myfincance.netlify.app/
+https://myfincance-onilio99.netlify.app
 
 O Projeto consiste num sistema de registro e controle de finanças. Utilizamos Javascrpit com HTML5 para o desenvolvimento de uma aplicação Web publicada no Netlify.
 
