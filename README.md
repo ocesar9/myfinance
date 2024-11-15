@@ -25,6 +25,4 @@ O Projeto consiste num sistema de registro e controle de finanças. Utilizamos J
 
 # Autor
 
-Júlio César de Oliveira Guimarães
-
-https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-de-oliveira-guimar%C3%A3es-183110162/
+[Júlio Guimarães](https://github.com/ocesar9)
